@@ -1,0 +1,16 @@
+/* Default speed (Laptop / PC) */
+.marquee {
+  animation: marquee 20s linear infinite;
+}
+
+/* Mobile speed increase (fast) */
+@media (max-width: 768px) {
+  .marquee {
+    animation: marquee 25s linear infinite; /* mobile = 2x fast */
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
